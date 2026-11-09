@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f8ecd6">
+<title>Hyzam &amp; Fathima Ruba | Wedding Invitation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Amiri&display=swap">
+<style>
+:root{
+  --bg:#fbf1de; --bg2:#f4e2c0; --ink:#5a3410; --gold:#b8872e; --soft:#8a6a3c; --card:#fff8ea;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  --script:'Great Vibes','Snell Roundhand','Brush Script MT',cursive;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --arabic:'Amiri','Traditional Arabic',serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f160b;--bg2:#2c1f10;--ink:#f3e2bf;--gold:#d8a94a;--soft:#c9ac78;--card:#2a1d0e}}
+:root[data-theme="dark"]{--bg:#1f160b;--bg2:#2c1f10;--ink:#f3e2bf;--gold:#d8a94a;--soft:#c9ac78;--card:#2a1d0e}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.15rem;line-height:1.6;text-align:center;overflow-x:hidden}
+body.locked{overflow:hidden;height:100vh}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.script{font-family:var(--script);font-weight:400;line-height:1.05;margin:0}
+.arabic{font-family:var(--arabic);direction:rtl;line-height:1.7}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* cover */
+#cover{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem;background:radial-gradient(circle at 50% 30%,var(--card),var(--bg2));transition:opacity .9s ease,visibility .9s}
+#cover.open{opacity:0;visibility:hidden}
+#cover .names{font-size:clamp(3rem,14vw,5.5rem);color:var(--ink)}
+#cover p{margin:0;color:var(--soft)}
+.btn{display:inline-block;border:1.5px solid var(--gold);background:transparent;color:var(--ink);font:700 1.1rem var(--serif);padding:.7rem 2rem;border-radius:999px;cursor:pointer;text-decoration:none;letter-spacing:.03em}
+.btn:hover{background:var(--gold);color:#fff}
+
+/* flowers */
+.flora{position:absolute;pointer-events:none;width:min(46vw,260px);opacity:.9}
+.tl{top:0;left:0}.br{bottom:0;right:0;transform:rotate(180deg)}
+.lantern{position:absolute;top:0;width:44px;pointer-events:none}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:4.5rem 1rem 3rem;overflow:hidden;background:linear-gradient(var(--bg),var(--bg2))}
+.arch{position:relative;z-index:1;width:min(100%,560px);padding:3.2rem 1.4rem 2.4rem;border:1.5px solid var(--gold);border-radius:220px 220px 14px 14px;background:color-mix(in srgb,var(--card) 80%,transparent)}
+.arch .arabic{font-size:2.1rem;color:var(--ink);margin:0}
+.verse{font-style:italic;margin:.2rem 0 0}.verse small{display:block;font-style:normal;font-size:.9rem;color:var(--soft)}
+.rule{display:flex;align-items:center;gap:.8rem;color:var(--gold);margin:1rem auto;max-width:360px}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--gold)}
+.parents{font-weight:700;font-size:1.25rem;margin:0}
+.parents span{display:block;font-size:1.05rem}
+.invite{font-style:italic;margin:.6rem 0}
+.nm{font-size:clamp(3.4rem,16vw,5.4rem);color:var(--ink);margin:.4rem 0 0}
+.fam{font-size:.98rem;margin:0 auto;max-width:440px;color:var(--soft)}
+.amp{font-size:1.8rem;font-weight:700;color:var(--gold);margin:.3rem 0}
+.insha{font-style:italic;font-size:1.4rem;margin:1rem 0 .6rem}
+.pill{display:inline-block;border:1.5px solid var(--gold);border-radius:999px;padding:.35rem 1.6rem;font-weight:700;font-size:1.35rem;background:var(--card)}
+
+/* countdown */
+.count{display:flex;justify-content:center;gap:.6rem;margin:1.6rem 0 0;flex-wrap:wrap}
+.count div{min-width:64px;padding:.5rem .3rem;border:1px solid var(--gold);border-radius:10px;background:var(--card)}
+.count b{display:block;font-size:1.7rem;line-height:1.1}
+.count span{font-size:.85rem;color:var(--soft)}
+
+/* sections */
+section.s{position:relative;padding:4rem 1.2rem;max-width:620px;margin:0 auto}
+section.s h2{font-family:var(--script);font-weight:400;font-size:clamp(2.4rem,9vw,3.4rem);margin:0 0 .6rem}
+.date{font-size:2.1rem;font-weight:700;margin:.4rem 0 0}
+.hijri{margin:0;color:var(--soft)}
+.venue{font-size:1.9rem;font-weight:700;font-style:italic;margin:.2rem 0}
+.row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.4rem}
+.close{background:var(--bg2);padding:4rem 1.2rem calc(3rem + env(safe-area-inset-bottom,0px))}
+.close .script{font-size:clamp(2.6rem,11vw,4rem)}
+.heart{color:var(--gold);font-size:1.6rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}#cover{transition:none}}
+
+/* animations */
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes swing{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes breathe{50%{scale:1.05}}
+@keyframes shine{to{background-position:-250% 0}}
+@keyframes glow{50%{box-shadow:0 0 18px 2px color-mix(in srgb,var(--gold) 55%,transparent)}}
+@keyframes beat{0%,100%{transform:scale(1)}30%{transform:scale(1.35)}60%{transform:scale(1.1)}}
+@keyframes fall{to{transform:translate3d(var(--dx),112vh,0) rotate(600deg)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
+@keyframes spin{to{rotate:360deg}}
+#cover>*{animation:up 1.1s ease both}
+#cover>*:nth-child(2){animation-delay:.2s}#cover>*:nth-child(3){animation-delay:.4s}#cover>*:nth-child(4){animation-delay:.6s}#cover>*:nth-child(5){animation-delay:.8s}
+.spark{position:absolute;color:var(--gold);animation:twinkle 3s ease-in-out infinite;pointer-events:none}
+.lantern{transform-origin:50% 0;animation:swing 4.5s ease-in-out infinite}
+.lantern+.lantern{animation-duration:5.5s;animation-delay:-1.5s}
+.flora{animation:breathe 8s ease-in-out infinite}.tl{transform-origin:0 0}.br{animation-delay:-4s}
+.arch{opacity:0;scale:.94;transition:opacity 1.3s ease,scale 1.3s ease}
+body.opened .arch{opacity:1;scale:1}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.nm{background:linear-gradient(100deg,var(--ink) 40%,var(--gold) 50%,var(--ink) 60%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 6s linear infinite;padding:0 .15em}
+.pill{animation:glow 3s ease-in-out infinite}
+.heart{display:inline-block;animation:beat 1.8s ease-in-out infinite}
+.petal{position:fixed;top:-24px;z-index:5;pointer-events:none;border-radius:80% 0 80% 0;background:linear-gradient(135deg,#fff3dc,#f0c98a);opacity:.85;animation:fall linear infinite}
+#mus{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:15;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold);background:var(--card);color:var(--ink);font-size:1.3rem;cursor:pointer;display:none}
+body.opened #mus{display:block}
+#mus.on span{display:inline-block;animation:spin 4s linear infinite}
+#mus.off::after{content:"";position:absolute;left:10px;right:10px;top:50%;height:2px;background:var(--gold);transform:rotate(-40deg)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none;transition:none}.arch{transition:none}}
+</style>
+</head>
+<body class="locked">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="rose" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="#f6dcb4"/><circle cx="50" cy="50" r="36" fill="#fbe9cc" stroke="#e6c48d" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="26" fill="#f8dfb8" stroke="#dcb77a" stroke-width="1.5"/><circle cx="50" cy="50" r="16" fill="#fbe9cc" stroke="#d3a966" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="7" fill="#e9c68e"/>
+    </symbol>
+    <symbol id="bloom" viewBox="0 0 20 20"><g fill="#fff6e4" stroke="#e0bd84" stroke-width=".6"><circle cx="10" cy="4" r="3.2"/><circle cx="16" cy="10" r="3.2"/><circle cx="10" cy="16" r="3.2"/><circle cx="4" cy="10" r="3.2"/></g><circle cx="10" cy="10" r="2" fill="#d8a94a"/></symbol>
+    <g id="corner">
+      <path d="M10 10 C80 40 120 100 150 200" stroke="#9c8453" stroke-width="2" fill="none"/>
+      <path d="M10 70 C60 80 90 120 100 190" stroke="#9c8453" stroke-width="1.5" fill="none"/>
+      <ellipse cx="62" cy="96" rx="22" ry="9" transform="rotate(50 62 96)" fill="#b7a273" opacity=".7"/>
+      <ellipse cx="110" cy="150" rx="22" ry="9" transform="rotate(70 110 150)" fill="#b7a273" opacity=".7"/>
+      <use href="#bloom" x="95" y="30" width="30" height="30"/><use href="#bloom" x="125" y="90" width="26" height="26"/>
+      <use href="#bloom" x="60" y="150" width="24" height="24"/><use href="#bloom" x="135" y="170" width="22" height="22"/>
+      <use href="#rose" x="-30" y="-30" width="130" height="130"/><use href="#rose" x="20" y="70" width="80" height="80"/>
+    </g>
+    <g id="lamp">
+      <line x1="22" y1="0" x2="22" y2="40" stroke="#b8872e" stroke-width="1.5"/>
+      <path d="M12 40h20l-3-8h-14z" fill="#d8a94a"/><rect x="10" y="40" width="24" height="46" rx="6" fill="#f6dd9a" stroke="#b8872e" stroke-width="2"/>
+      <ellipse cx="22" cy="63" rx="6" ry="12" fill="#fff3c4"/><path d="M12 86h20l-4 10H16z" fill="#d8a94a"/>
+    </g>
+  </defs>
+</svg>
+
+<audio id="bgm" loop preload="auto" src="music.mp3"></audio>
+<button id="mus" class="on" type="button" aria-label="Mute or play music"><span>♪</span></button>
+<div id="cover">
+  <p class="arabic" style="font-size:1.8rem">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <p>With love &amp; blessings</p>
+  <h1 class="script names">Hyzam &amp; Fathima Ruba</h1>
+  <p>Sunday, 20 December 2026</p>
+  <button class="btn" id="openBtn" type="button">Open invitation</button>
+</div>
+
+<header class="hero" id="home">
+  <svg class="flora tl" viewBox="0 0 200 220" aria-hidden="true"><use href="#corner"/></svg>
+  <svg class="flora br" viewBox="0 0 200 220" aria-hidden="true"><use href="#corner"/></svg>
+  <svg class="lantern" style="right:18%" viewBox="0 0 44 100" aria-hidden="true"><use href="#lamp"/></svg>
+  <svg class="lantern" style="right:6%;width:54px" viewBox="0 0 44 100" aria-hidden="true"><use href="#lamp"/></svg>
+
+  <div class="arch">
+    <p class="arabic">وَخَلَقْنَاكُمْ أَزْوَاجًا</p>
+    <p class="verse">“And We created you in pairs.”<small>(Surah An-Naba 78:8)</small></p>
+    <div class="rule">✦</div>
+    <p class="parents">Mr. Abdul Kareem Edavana &amp; Mrs. Naseema<span>“BAHEEYA” PANOOR</span></p>
+    <p class="invite">We cordially invite your esteemed presence on the auspicious occasion of the wedding ceremony of our son</p>
+    <h2 class="script nm">Hyzam</h2>
+    <p class="fam">Grand S/o Late Ibrahim Kutty Edavana &amp; Late Usman Valiya Parambath</p>
+    <div class="amp">&amp;</div>
+    <h2 class="script nm">Fathima Ruba</h2>
+    <p class="fam">D/o Mr. Muhammed Rafeek &amp; Mrs. Thahira<br>Angadiyullathil, Thoovakkunnu<br>Grand D/o Late OK Abdulla &amp; Late Poyil Ebrahim</p>
+    <p class="insha">In Sha Allah</p>
+    <span class="pill">Nikkah at 11:30 AM</span>
+    <div class="count" id="count" aria-label="Countdown to the wedding">
+      <div><b id="d">--</b><span>Days</span></div><div><b id="h">--</b><span>Hours</span></div>
+      <div><b id="m">--</b><span>Minutes</span></div><div><b id="s">--</b><span>Seconds</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="s" id="details">
+  <h2>Wedding details</h2>
+  <div class="rule">✦</div>
+  <p class="date">20 December 2026</p>
+  <p class="hijri">Sunday · 11 Rajab 1448 AH</p>
+  <p style="margin:1.2rem 0 0"><span class="pill">Nikkah at 11:30 AM</span></p>
+  <p style="margin:1rem 0 0">Followed by reception at <b>1:00 PM</b></p>
+</section>
+
+<section class="s" id="venue">
+  <h2>Venue</h2>
+  <div class="rule">✦</div>
+  <p class="venue">Townbank Auditorium, Thalassery</p>
+  <div class="row">
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Townbank+Auditorium+Thalassery" target="_blank" rel="noopener">Get directions</a>
+    <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding+of+Hyzam+%26+Fathima+Ruba&amp;dates=20261220T060000Z/20261220T093000Z&amp;location=Townbank+Auditorium%2C+Thalassery&amp;details=Nikkah+at+11%3A30+AM.+Reception+at+1%3A00+PM." target="_blank" rel="noopener">Add to calendar</a>
+  </div>
+</section>
+
+<footer class="close">
+  <p class="arabic" style="font-size:1.6rem;margin:0">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <p>Your presence and prayers will make this day more meaningful.</p>
+  <p class="script">Hyzam &amp; Fathima Ruba</p>
+  <p class="heart">♡</p>
+  <p>With love &amp; gratitude<br>Abdul Kareem Edavana &amp; Naseema, Panoor</p>
+</footer>
+
+<script>
+(function(){
+  var cover=document.getElementById('cover'),bgm=document.getElementById('bgm'),mus=document.getElementById('mus'),want=false;
+  function rnd(a,b){return a+Math.random()*(b-a)}
+  for(var k=0;k<14;k++){var sp=document.createElement('span');sp.className='spark';sp.textContent='✦';
+    sp.style.cssText='left:'+rnd(5,92)+'%;top:'+rnd(5,92)+'%;font-size:'+rnd(.7,1.4)+'rem;animation-delay:'+rnd(0,3)+'s';cover.appendChild(sp)}
+  var rv=[].slice.call(document.querySelectorAll('.arch>*'));
+  rv.forEach(function(e,i){e.classList.add('rv');e.style.setProperty('--d',(0.5+i*0.14)+'s')});
+  var sc=[].slice.call(document.querySelectorAll('.s>*,.close>*'));sc.forEach(function(e){e.classList.add('rv')});
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15}):null;
+  sc.forEach(function(e){io?io.observe(e):e.classList.add('in')});
+  function setMus(on){want=on;mus.classList.toggle('on',on);mus.classList.toggle('off',!on);
+    if(on){var p=bgm.play();if(p&&p.catch)p.catch(function(){})}else bgm.pause()}
+  document.getElementById('openBtn').addEventListener('click',function(){
+    cover.classList.add('open');document.body.classList.remove('locked');document.body.classList.add('opened');
+    rv.forEach(function(e){e.classList.add('in')});
+    bgm.volume=.8;setMus(true);
+    if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+      for(var i=0;i<16;i++){var p=document.createElement('span');p.className='petal';var z=rnd(8,15);
+        p.style.cssText='left:'+rnd(0,100)+'%;width:'+z+'px;height:'+(z*1.3)+'px;--dx:'+rnd(-90,90)+'px;animation-duration:'+rnd(9,16)+'s;animation-delay:'+rnd(0,10)+'s';
+        document.body.appendChild(p)}}
+  });
+  mus.addEventListener('click',function(){setMus(!want)});
+  document.addEventListener('visibilitychange',function(){if(document.hidden)bgm.pause();else if(want){var p=bgm.play();if(p&&p.catch)p.catch(function(){})}});
+  var target=new Date('2026-12-20T11:30:00+05:30').getTime();
+  var ids=['d','h','m','s'].map(function(i){return document.getElementById(i)});
+  function tick(){
+    var t=Math.max(0,target-Date.now()),
+        v=[Math.floor(t/864e5),Math.floor(t%864e5/36e5),Math.floor(t%36e5/6e4),Math.floor(t%6e4/1e3)];
+    v.forEach(function(n,i){ids[i].textContent=String(n).padStart(2,'0')});
+  }
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
