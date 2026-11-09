@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f8ecd6">
+<meta name="theme-color" content="#f7f5ee">
 <title>Hyzam &amp; Fathima Ruba | Wedding Invitation</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Amiri&display=swap">
 <style>
 :root{
-  --bg:#fbf1de; --bg2:#f4e2c0; --ink:#5a3410; --gold:#b8872e; --soft:#8a6a3c; --card:#fff8ea;
+  --bg:#fbf1de; --bg2:#f4e2c0; --ink:#5a3410; --gold:#6f8a62; --soft:#8a6a3c; --card:#fff8ea;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
   --script:'Great Vibes','Snell Roundhand','Brush Script MT',cursive;
   --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
   --arabic:'Amiri','Traditional Arabic',serif;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f160b;--bg2:#2c1f10;--ink:#f3e2bf;--gold:#d8a94a;--soft:#c9ac78;--card:#2a1d0e}}
-:root[data-theme="dark"]{--bg:#1f160b;--bg2:#2c1f10;--ink:#f3e2bf;--gold:#d8a94a;--soft:#c9ac78;--card:#2a1d0e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b2419;--bg2:#243022;--ink:#e8efdf;--gold:#a9c29a;--soft:#a9b99b;--card:#222c1f}}
+:root[data-theme="dark"]{--bg:#1b2419;--bg2:#243022;--ink:#e8efdf;--gold:#a9c29a;--soft:#a9b99b;--card:#222c1f}
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.15rem;line-height:1.6;text-align:center;overflow-x:hidden}
@@ -96,12 +96,43 @@ body.opened .arch{opacity:1;scale:1}
 .nm{background:linear-gradient(100deg,var(--ink) 40%,var(--gold) 50%,var(--ink) 60%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 6s linear infinite;padding:0 .15em}
 .pill{animation:glow 3s ease-in-out infinite}
 .heart{display:inline-block;animation:beat 1.8s ease-in-out infinite}
-.petal{position:fixed;top:-24px;z-index:5;pointer-events:none;border-radius:80% 0 80% 0;background:linear-gradient(135deg,#fff3dc,#f0c98a);opacity:.85;animation:fall linear infinite}
+.petal{position:fixed;top:-24px;z-index:5;pointer-events:none;border-radius:80% 0 80% 0;background:linear-gradient(135deg,#fbfcf7,#b9cca9);opacity:.85;animation:fall linear infinite}
 #mus{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:15;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold);background:var(--card);color:var(--ink);font-size:1.3rem;cursor:pointer;display:none}
 body.opened #mus{display:block}
 #mus.on span{display:inline-block;animation:spin 4s linear infinite}
 #mus.off::after{content:"";position:absolute;left:10px;right:10px;top:50%;height:2px;background:var(--gold);transform:rotate(-40deg)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none;transition:none}.arch{transition:none}}
+
+/* mobile */
+html{-webkit-text-size-adjust:100%}
+.hero{min-height:100vh;min-height:100svh}
+body.locked{height:100vh;height:100dvh}
+@media (max-width:520px){
+ body{font-size:1.05rem}
+ #cover .names{font-size:clamp(2.6rem,13vw,4rem)}
+ .hero{padding:3rem .6rem 2.4rem;align-items:flex-start}
+ .arch{width:100%;padding:4.8rem 1rem 2rem;border-radius:170px 170px 12px 12px}
+ .arch .arabic{font-size:1.7rem}
+ .verse{font-size:1rem}.verse small{font-size:.85rem}
+ .parents{font-size:1.1rem}.parents span{font-size:.95rem}
+ .invite{font-size:1rem;margin:.4rem 0}
+ .fam{font-size:.9rem}
+ .nm{font-size:clamp(3rem,17vw,4.2rem)}
+ .insha{font-size:1.2rem}
+ .pill{font-size:1.1rem;padding:.3rem 1.2rem}
+ .count{gap:.4rem}.count div{min-width:58px;padding:.4rem .2rem}.count b{font-size:1.4rem}.count span{font-size:.75rem}
+ .flora{width:34vw;opacity:.75}
+ .lantern:nth-of-type(3){right:12%!important;width:28px!important}
+ .lantern:nth-of-type(4){right:3%!important;width:34px!important}
+ section.s{padding:3rem 1rem}
+ .date{font-size:1.7rem}.venue{font-size:1.5rem}
+ .row .btn{flex:1 1 100%;max-width:280px}
+ .close{padding:3rem 1rem calc(4rem + env(safe-area-inset-bottom,0px))}
+}
+.nm.long{white-space:nowrap;font-size:clamp(2.4rem,13.5vw,4.6rem)}
+.one{white-space:nowrap}
+#cover .names.one{font-size:clamp(1.8rem,8.8vw,4.2rem)}
+.close .script.one{font-size:clamp(1.8rem,8.8vw,3.6rem)}
 </style>
 </head>
 <body class="locked">
@@ -109,24 +140,24 @@ body.opened #mus{display:block}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="rose" viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="46" fill="#f6dcb4"/><circle cx="50" cy="50" r="36" fill="#fbe9cc" stroke="#e6c48d" stroke-width="1.5"/>
-      <circle cx="50" cy="50" r="26" fill="#f8dfb8" stroke="#dcb77a" stroke-width="1.5"/><circle cx="50" cy="50" r="16" fill="#fbe9cc" stroke="#d3a966" stroke-width="1.5"/>
-      <circle cx="50" cy="50" r="7" fill="#e9c68e"/>
+      <circle cx="50" cy="50" r="46" fill="#dfe8d3"/><circle cx="50" cy="50" r="36" fill="#f3f6ec" stroke="#b5c7a6" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="26" fill="#e6eddb" stroke="#a9bf99" stroke-width="1.5"/><circle cx="50" cy="50" r="16" fill="#f3f6ec" stroke="#8fab7e" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="7" fill="#c3d5b3"/>
     </symbol>
-    <symbol id="bloom" viewBox="0 0 20 20"><g fill="#fff6e4" stroke="#e0bd84" stroke-width=".6"><circle cx="10" cy="4" r="3.2"/><circle cx="16" cy="10" r="3.2"/><circle cx="10" cy="16" r="3.2"/><circle cx="4" cy="10" r="3.2"/></g><circle cx="10" cy="10" r="2" fill="#d8a94a"/></symbol>
+    <symbol id="bloom" viewBox="0 0 20 20"><g fill="#fbfcf7" stroke="#b5c7a6" stroke-width=".6"><circle cx="10" cy="4" r="3.2"/><circle cx="16" cy="10" r="3.2"/><circle cx="10" cy="16" r="3.2"/><circle cx="4" cy="10" r="3.2"/></g><circle cx="10" cy="10" r="2" fill="#8fab7e"/></symbol>
     <g id="corner">
-      <path d="M10 10 C80 40 120 100 150 200" stroke="#9c8453" stroke-width="2" fill="none"/>
-      <path d="M10 70 C60 80 90 120 100 190" stroke="#9c8453" stroke-width="1.5" fill="none"/>
-      <ellipse cx="62" cy="96" rx="22" ry="9" transform="rotate(50 62 96)" fill="#b7a273" opacity=".7"/>
-      <ellipse cx="110" cy="150" rx="22" ry="9" transform="rotate(70 110 150)" fill="#b7a273" opacity=".7"/>
+      <path d="M10 10 C80 40 120 100 150 200" stroke="#6f8a62" stroke-width="2" fill="none"/>
+      <path d="M10 70 C60 80 90 120 100 190" stroke="#6f8a62" stroke-width="1.5" fill="none"/>
+      <ellipse cx="62" cy="96" rx="22" ry="9" transform="rotate(50 62 96)" fill="#9db38d" opacity=".7"/>
+      <ellipse cx="110" cy="150" rx="22" ry="9" transform="rotate(70 110 150)" fill="#9db38d" opacity=".7"/>
       <use href="#bloom" x="95" y="30" width="30" height="30"/><use href="#bloom" x="125" y="90" width="26" height="26"/>
       <use href="#bloom" x="60" y="150" width="24" height="24"/><use href="#bloom" x="135" y="170" width="22" height="22"/>
       <use href="#rose" x="-30" y="-30" width="130" height="130"/><use href="#rose" x="20" y="70" width="80" height="80"/>
     </g>
     <g id="lamp">
-      <line x1="22" y1="0" x2="22" y2="40" stroke="#b8872e" stroke-width="1.5"/>
-      <path d="M12 40h20l-3-8h-14z" fill="#d8a94a"/><rect x="10" y="40" width="24" height="46" rx="6" fill="#f6dd9a" stroke="#b8872e" stroke-width="2"/>
-      <ellipse cx="22" cy="63" rx="6" ry="12" fill="#fff3c4"/><path d="M12 86h20l-4 10H16z" fill="#d8a94a"/>
+      <line x1="22" y1="0" x2="22" y2="40" stroke="#6f8a62" stroke-width="1.5"/>
+      <path d="M12 40h20l-3-8h-14z" fill="#8fab7e"/><rect x="10" y="40" width="24" height="46" rx="6" fill="#e4ecd6" stroke="#6f8a62" stroke-width="2"/>
+      <ellipse cx="22" cy="63" rx="6" ry="12" fill="#fffdf0"/><path d="M12 86h20l-4 10H16z" fill="#8fab7e"/>
     </g>
   </defs>
 </svg>
@@ -136,7 +167,7 @@ body.opened #mus{display:block}
 <div id="cover">
   <p class="arabic" style="font-size:1.8rem">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
   <p>With love &amp; blessings</p>
-  <h1 class="script names">Hyzam &amp; Fathima Ruba</h1>
+  <h1 class="script names one">Hyzam &amp; Fathima Ruba</h1>
   <p>Sunday, 20 December 2026</p>
   <button class="btn" id="openBtn" type="button">Open invitation</button>
 </div>
@@ -156,10 +187,13 @@ body.opened #mus{display:block}
     <h2 class="script nm">Hyzam</h2>
     <p class="fam">Grand S/o Late Ibrahim Kutty Edavana &amp; Late Usman Valiya Parambath</p>
     <div class="amp">&amp;</div>
-    <h2 class="script nm">Fathima Ruba</h2>
+    <h2 class="script nm long">Fathima Ruba</h2>
     <p class="fam">D/o Mr. Muhammed Rafeek &amp; Mrs. Thahira<br>Angadiyullathil, Thoovakkunnu<br>Grand D/o Late OK Abdulla &amp; Late Poyil Ebrahim</p>
     <p class="insha">In Sha Allah</p>
-    <span class="pill">Nikkah at 11:30 AM</span>
+    <p class="date">20 December 2026</p>
+    <p class="hijri">Sunday · 11 Rajab 1448 AH</p>
+    <p style="margin:1rem 0 0"><span class="pill">Nikah at 11:30 AM</span></p>
+    <p style="margin:.9rem 0 0">Followed by reception at <b>1:00 PM</b></p>
     <div class="count" id="count" aria-label="Countdown to the wedding">
       <div><b id="d">--</b><span>Days</span></div><div><b id="h">--</b><span>Hours</span></div>
       <div><b id="m">--</b><span>Minutes</span></div><div><b id="s">--</b><span>Seconds</span></div>
@@ -167,29 +201,20 @@ body.opened #mus{display:block}
   </div>
 </header>
 
-<section class="s" id="details">
-  <h2>Wedding details</h2>
-  <div class="rule">✦</div>
-  <p class="date">20 December 2026</p>
-  <p class="hijri">Sunday · 11 Rajab 1448 AH</p>
-  <p style="margin:1.2rem 0 0"><span class="pill">Nikkah at 11:30 AM</span></p>
-  <p style="margin:1rem 0 0">Followed by reception at <b>1:00 PM</b></p>
-</section>
-
 <section class="s" id="venue">
   <h2>Venue</h2>
   <div class="rule">✦</div>
   <p class="venue">Townbank Auditorium, Thalassery</p>
   <div class="row">
     <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Townbank+Auditorium+Thalassery" target="_blank" rel="noopener">Get directions</a>
-    <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding+of+Hyzam+%26+Fathima+Ruba&amp;dates=20261220T060000Z/20261220T093000Z&amp;location=Townbank+Auditorium%2C+Thalassery&amp;details=Nikkah+at+11%3A30+AM.+Reception+at+1%3A00+PM." target="_blank" rel="noopener">Add to calendar</a>
+    <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding+of+Hyzam+%26+Fathima+Ruba&amp;dates=20261220T060000Z/20261220T093000Z&amp;location=Townbank+Auditorium%2C+Thalassery&amp;details=Nikah+at+11%3A30+AM.+Reception+at+1%3A00+PM." target="_blank" rel="noopener">Add to calendar</a>
   </div>
 </section>
 
 <footer class="close">
   <p class="arabic" style="font-size:1.6rem;margin:0">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
   <p>Your presence and prayers will make this day more meaningful.</p>
-  <p class="script">Hyzam &amp; Fathima Ruba</p>
+  <p class="script one">Hyzam &amp; Fathima Ruba</p>
   <p class="heart">♡</p>
   <p>With love &amp; gratitude<br>Abdul Kareem Edavana &amp; Naseema, Panoor</p>
 </footer>
